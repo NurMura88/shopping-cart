@@ -1,3 +1,4 @@
+import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 
 //Types
@@ -18,7 +19,7 @@ const Item: React.FC<Props> = ({ item, handleAddToCart }) => {
     <img src={item.image} alt={item.title} />
     <div>
       <h3>{item.title}</h3>
-      <p>{item.description}</p>
+      <Typography>{item.description}</Typography>
       <h3>{item.price}</h3>
     </div>
     <Button onClick={() => handleAddToCart(item)}>Add to cart</Button>
